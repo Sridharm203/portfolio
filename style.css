@@ -690,7 +690,13 @@
      display: block;
  }
 
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 575px) {
+
+     html,
+     body {
+         width: 100%;
+         overflow-x: hidden;
+     }
 
      .container {
          padding: 15px;
@@ -709,7 +715,7 @@
      }
 
      .icon {
-         display: block;
+         display: block !important;
          font-size: 26px;
          color: #fff;
          cursor: pointer;
@@ -724,7 +730,7 @@
          height: 100vh;
          padding-top: 60px;
          z-index: 2000;
-         transition: right 0.5s;
+         transition: right 0.4s cubic-bezier(0.1, 0.7, 0.1, 1);
      }
 
      nav ul li {
@@ -741,13 +747,13 @@
      .header {
          height: auto;
          min-height: 100vh;
-         padding-bottom: 40px;
+         padding-bottom: 50px;
      }
 
      .header-text {
-         margin-top: 110px;
+         margin-top: 120px;
          text-align: center;
-         font-size: 16px;
+         font-size: 15px;
      }
 
      .typing-text {
@@ -755,66 +761,70 @@
      }
 
      .header-text h1 {
-         font-size: 34px;
+         font-size: 32px;
          line-height: 1.3;
          margin-top: 15px;
      }
 
      .hero-tagline {
-         font-size: 15px;
-         line-height: 1.7;
+         font-size: 14px;
+         line-height: 1.6;
          max-width: 100%;
          margin-top: 15px;
      }
 
      .hero-buttons {
          margin-top: 25px;
-         display: flex;
-         flex-direction: column;
+         flex-direction: column !important;
          align-items: center;
          gap: 15px;
+         width: 100%;
      }
 
      .hire-btn,
      .work-btn {
-         width: 220px;
+         width: 100%;
+         max-width: 260px;
          text-align: center;
+         padding: 12px 0;
+     }
+
+     .row {
+         flex-direction: column !important;
+     }
+
+     .row-col-1,
+     .row-col-2 {
+         flex-basis: 100% !important;
+         width: 100%;
      }
 
      .sub-title {
          font-size: 36px;
          text-align: center;
-     }
-
-     .row {
-         flex-direction: column;
-     }
-
-     .row-col-1,
-     .row-col-2 {
-         flex-basis: 100%;
+         margin-bottom: 20px;
      }
 
      .row-col-1 {
          margin-bottom: 25px;
+         display: flex;
+         justify-content: center;
      }
 
      .row-col-1 img {
          width: 100%;
-         max-width: 300px;
+         max-width: 260px;
          height: auto;
-         margin: auto;
-         display: block;
      }
 
      .row-col-2 {
          font-size: 14px;
+         text-align: justify;
      }
 
      .tab-titles {
-         display: flex;
-         flex-wrap: wrap;
-         gap: 15px;
+         justify-content: center;
+         gap: 12px;
      }
 
      .tab-links {
@@ -822,9 +832,11 @@
          font-size: 15px;
      }
 
-     .services-list {
-         grid-template-columns: 1fr;
+     .services-list,
+     .work-list {
+         grid-template-columns: 1fr !important;
          gap: 20px;
+         margin-top: 30px;
      }
 
      .services-list div {
@@ -835,31 +847,21 @@
          font-size: 24px;
      }
 
-     .certificate-list {
-         grid-template-columns: 1fr;
-     }
-
      .works {
-         flex-direction: column;
+         flex-direction: column !important;
          gap: 15px;
      }
 
      .works img {
-         width: 100%;
+         width: 100% !important;
+         max-width: 320px;
          height: auto;
-     }
-
-     .work-list {
-         grid-template-columns: 1fr;
-         gap: 25px;
+         margin: 0 auto;
      }
 
      .work img {
-         height: auto;
-     }
-
-     .layer {
-         padding: 0 20px;
+         height: 240px;
+         object-fit: cover;
      }
 
      .layer h3 {
@@ -867,17 +869,12 @@
      }
 
      .layer p {
-         font-size: 13px;
-     }
-
-     .contact-left,
-     .contact-right {
-         flex-basis: 100%;
+         font-size: 12px;
      }
 
      .contact-left {
          text-align: center;
-         margin-bottom: 30px;
+         margin-bottom: 35px;
      }
 
      .social-links {
@@ -885,16 +882,27 @@
      }
 
      .social-links a {
-         font-size: 28px;
+         font-size: 30px;
+         margin: 0 10px;
      }
 
      form input,
      form textarea {
          font-size: 16px;
+         padding: 12px;
+     }
+
+     .btn.btn2 {
+         margin: 25px auto 0;
+         display: block;
      }
 
      .copyright {
-         font-size: 13px;
+         font-size: 12px;
          padding: 20px 10px;
      }
+ }
+
+ body {
+     background-color: red !important;
  }
