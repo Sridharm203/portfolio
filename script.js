@@ -27,7 +27,7 @@ function closemenu() {
 }
 
 
-// form submit
+// form submission
 
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxF22xw_x8ihi_bn0Ull593faBVGqWVuPerqlHONAqq5dIpZi73wlw57r9yiwH125lD/exec'
