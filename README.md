@@ -1,19 +1,22 @@
-👨‍💻 Personal Portfolio Website
+# Personal Portfolio Website
 
-A responsive personal portfolio website to showcase my skills, projects, and experience as a Full Stack Developer. This portfolio highlights my technical abilities and provides a way to connect with me.
+A responsive personal portfolio website built to showcase my skills, projects, and experience as a Full Stack Developer. The portfolio highlights my technical expertise, featured projects, and provides an easy way for recruiters and employers to connect with me.
 
-🚀 Features
-About Me section
-Skills showcase
-Project showcase with links
-Contact form / contact details
-Responsive design (mobile & desktop)
-Smooth navigation and modern 
+## Features
 
-🛠️ Tech Stack
-HTML5
-CSS3
-JavaScript
+- About Me section
+- Technical Skills showcase
+- Featured Projects with GitHub and Live Demo links
+- Contact section
+- Responsive design for desktop, tablet, and mobile devices
+- Smooth navigation with a modern user interface
 
-🌐 Live Demo
-👉 https://sridharm-portfolio.vercel.app/
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Live Demo
+
+https://sridharm-portfolio.vercel.app/
