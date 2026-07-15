@@ -853,13 +853,15 @@ form .btn2 {
         font-size: 24px;
     }
 
+    .works {
+        gap: 20px;
+    }
 
-
-    .works img:nth-child(1),
-    .works img:nth-child(2),
-    .works img:nth-child(3) {
+    .works .cert-img.landscape,
+    .works .cert-img.portrait {
         width: 100%;
         height: auto;
+        min-width: 0;
     }
 
     #Projects {
